@@ -1,5 +1,10 @@
+/* Colors: https://kuler.adobe.com/InfoReady-Brand-Option-2-color-theme-3124965/
+ * Clean: http://pltts.me/palettes/342627
+ */
+
 body {
   font-family: Open Sans, sans-serif;
+  color: #444;
   padding: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -8,72 +13,53 @@ body {
   max-width: 900px;
 }
 
-.circ {
-  border-radius: 50%;
-  width: 100%;
-  padding-bottom: 100%;
-  background: red;
+h1 {
+  font-size: 5em;
+  font-weight: 400;
 }
 
+.circ {
+  width:100%;
+  border-radius:50%;
+  text-align:center;
+  padding:50% 0;
+  line-height:0;
+  position:relative;
+  background: #3498DB;
+  font-family: Helvetica, sans;
+  position: relative;
+
+}
+
+.circ div {
+  position: relative;
+}
 
 .circles {
   padding-left: 5%;
   padding-right: 10%;
   padding-bottom: 5%;
-}
-
-/*
-.smallblue p {
-  text-align: center;
   color: white;
-  width: 85%;
-  font-size: 25px;
-  margin: 33% auto 0 auto;
 }
-
-.bigred p {
-  text-align: center;
-  color: white;
-  margin: 37% auto 0 auto;
-}
-*/
 
 #big {
   width: 25%;
   float: left;
+  font-size: 48px;
+}
+
+#big div {
+  background-color: #E74C3C;;
 }
 
 #small {
   width: 17%;
   float: right;
-  margin-top: 5%
+  margin-top: 15%
 }
-
-/*
-.bigred {
-  float: left;
-  border: 1px solid #E74C3C;
-  background: #E74C3C;
-  border-radius: 50%;
-  width: 256px;
-  height: 256px;
-  font-size: 50px;
-}
-
-.smallblue {
-  float: right;
-  border: 1px solid #3498DB;
-  background: #3498DB;
-  border-radius: 50%;
-  margin-top: 164px;
-  width: 180px;
-  height: 180px;
-}
-*/
 
 .content {
   clear: both;
-  color: gray;
   font-size: 1.2em;
   font-weight: 300;
 }
