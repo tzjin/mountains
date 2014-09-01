@@ -11,9 +11,9 @@ var cellSize,
     newBoard;
 
 function init() {
-  cellSize = 12;
-  width = Math.round(document.body.clientWidth / cellSize);
-  height = Math.round(document.body.clientHeight / cellSize);
+  cellSize = 14;
+  width = Math.round(600 / cellSize);
+  height = Math.round(400 / cellSize);
   cvs = document.getElementById('bg');
   cvs.width = cellSize * width;
   cvs.height = cellSize * height;
@@ -24,14 +24,10 @@ function init() {
 
 
 function reset() {
-   board = [];
-   for (var i = 0; i < width; i++) {
-      var arr = [];
-      for (var j = 0; j < height; j++) {
-         arr.push(false);
-      };
-      board.push(arr);
-   };
+  board = new Array(width);
+  for (var i = 0; i < width; i++) {
+    board[i] = new Array(height);
+  }
 }
 
 function manual () {
@@ -69,20 +65,11 @@ function testDisp() {
 
 
 function step() {
-//  newBoard = new Array(width);
-//  for (var i = 0; i < width; i++) {
-//    newBoard = new Array(height);
-//  }
-
   // reset newBoard
-  newBoard = [];
-   for (var i = 0; i < width; i++) {
-      var arr = [];
-      for (var j = 0; j < height; j++) {
-         arr.push(false);
-      };
-      newBoard.push(arr);
-   };
+  newBoard = new Array(width);
+  for (var i = 0; i < width; i++) {
+    newBoard[i] = new Array(height);
+  }
 
   // set newBoard
   for (var i = 0; i < width; i++) {
@@ -123,7 +110,7 @@ function run(arr) {
                 var newArr = step(arr);
                 display(newArr);
                 arr = newArr;
-}, 100);
+}, 150);
 }
 
 $(document).ready(function () {

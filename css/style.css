@@ -6,56 +6,17 @@ body {
   font-family: Open Sans, sans-serif;
   color: #444;
   padding: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   position: relative;
-  min-width: 640px;
+  min-width: 480px;
   max-width: 900px;
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4.5em;
   font-weight: 400;
-}
-
-.circ {
-  width:100%;
-  border-radius:50%;
-  text-align:center;
-  padding:50% 0;
-  line-height:0;
-  position:relative;
-  background: #3498DB;
-  font-family: Helvetica, sans;
-  position: relative;
-
-}
-
-.circ div {
-  position: relative;
-}
-
-.circles {
-  padding-left: 5%;
-  padding-right: 10%;
-  padding-bottom: 5%;
-  color: white;
-}
-
-#big {
-  width: 25%;
-  float: left;
-  font-size: 48px;
-}
-
-#big div {
-  background-color: #E74C3C;;
-}
-
-#small {
-  width: 17%;
-  float: right;
-  margin-top: 15%
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
 }
 
 .content {
@@ -75,13 +36,13 @@ h3 {
   margin-top: 0;
 }
 
+/* Contact Information */
 
 .footer {
   position: absolute;
   width:90%;
   bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 10px auto;
 }
 
 .contact {
@@ -102,6 +63,8 @@ a:hover {
 }
 
 
+/* Making Pretty Triangles */
+
 .triangles {
   right:18%;
   float: right;
@@ -121,7 +84,6 @@ a:hover {
   right:0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-
   border-bottom: 120px solid #E74C3C;
 }
 
@@ -130,7 +92,6 @@ a:hover {
   opacity: 0.3;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
-
   border-bottom: 110px solid gray;
 }
 
@@ -139,7 +100,6 @@ a:hover {
   margin-right: -25px;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-
   border-bottom: 90px solid #0067A5;
 }
 
@@ -148,6 +108,5 @@ a:hover {
   opacity: 0.7;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-
   border-bottom: 80px solid #3498DB;
 }

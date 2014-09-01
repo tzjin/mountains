@@ -1,4 +1,14 @@
+body {
+  font-family: Lato, Helvetica, sans;
+  margin: 2%;
+}
+
 #bg {
   margin: auto;
   display: block;
+}
+
+.content {
+  width: 600px;
+  margin: auto;
 }
