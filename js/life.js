@@ -2,6 +2,8 @@
 // only redraw changes
 // implement list life
 
+// https://kuler.adobe.com/Cotton-Candy-color-theme-1633259/
+
 var cellSize,
     width,
     height,
@@ -11,7 +13,7 @@ var cellSize,
     newBoard;
 
 function init() {
-  cellSize = 14;
+  cellSize = 20;
   width = Math.round(600 / cellSize);
   height = Math.round(400 / cellSize);
   cvs = document.getElementById('bg');
@@ -42,18 +44,15 @@ function manual () {
 }
 
 function display() {
+  var newColor = randomColor({luminosity:'light'})
    for (var i = 0; i < width; i++) {
       for (var j = 0; j < height; j++) {
         ctx.beginPath();
         ctx.arc((i + 0.5) * cellSize, (j + 0.5) * cellSize, cellSize / 2.4, 0, 2 * Math.PI);
-        ctx.fillStyle = (board[i][j]) ? chooseColor() : 'blue';
+        ctx.fillStyle = (board[i][j]) ? newColor : '#3498DB';
         ctx.fill();
       };
    };
-}
-
-function chooseColor() {
-  return 'white';
 }
 
 function testDisp() {
@@ -110,7 +109,7 @@ function run(arr) {
                 var newArr = step(arr);
                 display(newArr);
                 arr = newArr;
-}, 150);
+}, 250);
 }
 
 $(document).ready(function () {
