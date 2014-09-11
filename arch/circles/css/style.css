@@ -1,27 +1,57 @@
-/* Colors: https://kuler.adobe.com/InfoReady-Brand-Option-2-color-theme-3124965/
- * Clean: http://pltts.me/palettes/342627
- */
-
 body {
   font-family: Open Sans, sans-serif;
-  color: #444;
   padding: 5%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  min-width: 480px;
+  min-width: 640px;
   max-width: 900px;
 }
 
-h1 {
-  font-size: 4.5em;
-  font-weight: 400;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+.circles {
+  padding-left: 5%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.smallblue p {
+  text-align: center;
+  color: white;
+  width: 85%;
+  font-size: 25px;
+  margin: 33% auto 0 auto;
+}
+
+.bigred p {
+  text-align: center;
+  color: white;
+  margin: 37% auto 0 auto;
+}
+
+.bigred {
+  float: left;
+  border: 1px solid #E74C3C;
+  background: #E74C3C;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  font-size: 50px;
+}
+
+.smallblue {
+  float: right;
+  border: 1px solid #3498DB;
+  background: #3498DB;
+  border-radius: 50%;
+  margin-top: 164px;
+  width: 180px;
+  height: 180px;
 }
 
 .content {
   clear: both;
-  font-size: 1.2em;
+  color: gray;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
@@ -36,17 +66,13 @@ h3 {
   margin-top: 0;
 }
 
-.section {
-  margin-bottom: 20px;
-}
-
-/* Contact Information */
 
 .footer {
   position: absolute;
   width:90%;
   bottom: 0;
-  margin: 10px auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact {
@@ -67,8 +93,6 @@ a:hover {
 }
 
 
-/* Making Pretty Triangles */
-
 .triangles {
   right:18%;
   float: right;
@@ -88,6 +112,7 @@ a:hover {
   right:0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
+
   border-bottom: 120px solid #E74C3C;
 }
 
@@ -96,6 +121,7 @@ a:hover {
   opacity: 0.3;
   border-left: 55px solid transparent;
   border-right: 55px solid transparent;
+
   border-bottom: 110px solid gray;
 }
 
@@ -104,6 +130,7 @@ a:hover {
   margin-right: -25px;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
+
   border-bottom: 90px solid #0067A5;
 }
 
@@ -112,5 +139,6 @@ a:hover {
   opacity: 0.7;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
+
   border-bottom: 80px solid #3498DB;
 }
