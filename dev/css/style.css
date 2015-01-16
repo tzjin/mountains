@@ -1,13 +1,137 @@
+/**********************************************************
+* style.css
+*
+* Author: Tony Jin
+* Date: 1/16/15
+**********************************************************/
+
 body {
- font-family: "Merriweather", serif; 
+  color: #444;
 }
+
+.container {
+  max-width: 800px;
+  height: 90vh;
+}
+
+/**********************************************************
+                  standard elements 
+**********************************************************/
 
 p {
-  font-family: "Merriweather", serif; 
-  font-weight: 400;
+
 }
 
-.title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
+a:link {
+  color: inherit;
+  text-decoration: none;
+  
+  border-bottom: 1px dotted;
 }
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:focus{
+
+}
+
+a:visited {
+}
+
+
+/**********************************************************
+                  title section (heads) 
+**********************************************************/
+.title {
+  margin-top: 10vh;  
+  font-family: "Raleway", sans-serif;
+}
+
+/**********************************************************
+                  about section (shoulders) 
+**********************************************************/
+.about {
+
+}
+
+
+/**********************************************************
+                  projects completed (knees)
+**********************************************************/
+.posts {
+  
+}
+
+/**********************************************************
+                  footer component (and toes) 
+**********************************************************/
+.footer {
+  position: absolute;
+  bottom: 1em;
+  width: 90%;
+  left: 5%;
+}
+
+.contact {
+/*  margin-right: 150px;*/
+  font-size: 0.8em; 
+  font-weight: 300;
+  text-align: center;
+  float:right;
+}
+
+
+/* Making Pretty Triangles */
+
+.triangles {
+  right:18%;
+  float: right;
+  height:5px;
+  min-width: 150px;
+  width: 40%
+}
+
+.triangles div {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.redtri {
+  right:0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid #E74C3C;
+}
+
+.greytri {
+  right:50px;
+  opacity: 0.3;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 110px solid gray;
+}
+
+.navytri {
+  right: 110px;
+  margin-right: -25px;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 90px solid #0067A5;
+}
+
+.bluetri {
+  right:60px;
+  opacity: 0.7;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #3498DB;
+}
+
+
+/**********************************************************
+                  responsivity (growing pains?) 
+**********************************************************/
