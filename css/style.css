@@ -1,69 +1,85 @@
-/* Colors: https://kuler.adobe.com/InfoReady-Brand-Option-2-color-theme-3124965/
- * Clean: http://pltts.me/palettes/342627
- */
+/**********************************************************
+* style.css
+*
+* Author: Tony Jin
+* Date: 1/16/15
+**********************************************************/
 
 body {
-  font-family: Open Sans, sans-serif;
   color: #444;
-  padding: 5%;
-  margin: auto;
-  position: relative;
-  min-width: 480px;
-  max-width: 900px;
 }
 
-h1 {
-  font-size: 4.5em;
-  font-weight: 400;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+.container {
+  max-width: 800px;
+  height: 90vh;
 }
 
-.content {
-  clear: both;
-  font-size: 1.2em;
-  font-weight: 300;
+/**********************************************************
+                  standard elements 
+**********************************************************/
+
+p {
+
 }
 
-h3 {
-  text-decoration: underline;
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.content p {
-  margin-top: 0;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-/* Contact Information */
-
-.footer {
-  position: absolute;
-  width:90%;
-  bottom: 0;
-  margin: 10px auto;
-}
-
-.contact {
-  float: right;
-  color: gray;
-  font-size: 0.8em;
-  font-weight: 200;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
+a:link {
   color: inherit;
+  text-decoration: none;
+  
+  border-bottom: 1px dotted;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid;
+}
+
+a:focus{
+
+}
+
+a:visited {
+}
+
+
+/**********************************************************
+                  title section (heads) 
+**********************************************************/
+.title {
+  margin-top: 10vh;  
+  font-family: "Raleway", sans-serif;
+}
+
+/**********************************************************
+                  about section (shoulders) 
+**********************************************************/
+.about {
+
+}
+
+
+/**********************************************************
+                  projects completed (knees)
+**********************************************************/
+.posts {
+  
+}
+
+/**********************************************************
+                  footer component (and toes) 
+**********************************************************/
+.footer {
+  position: absolute;
+  bottom: 1em;
+  width: 90%;
+  left: 5%;
+}
+
+.contact {
+/*  margin-right: 150px;*/
+  font-size: 0.8em; 
+  font-weight: 300;
+  text-align: center;
+  float:right;
 }
 
 
@@ -114,3 +130,8 @@ a:hover {
   border-right: 40px solid transparent;
   border-bottom: 80px solid #3498DB;
 }
+
+
+/**********************************************************
+                  responsivity (growing pains?) 
+**********************************************************/

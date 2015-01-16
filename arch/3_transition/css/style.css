@@ -1,0 +1,116 @@
+/* Colors: https://kuler.adobe.com/InfoReady-Brand-Option-2-color-theme-3124965/
+ * Clean: http://pltts.me/palettes/342627
+ */
+
+body {
+  font-family: Open Sans, sans-serif;
+  color: #444;
+  padding: 5%;
+  margin: auto;
+  position: relative;
+  min-width: 480px;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.content {
+  clear: both;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.content p {
+  margin-top: 0;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+
+.footer {
+  position: absolute;
+  width:90%;
+  bottom: 0;
+  margin: 10px auto;
+}
+
+.contact {
+  float: right;
+  color: gray;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Making Pretty Triangles */
+
+.triangles {
+  right:18%;
+  float: right;
+  height:5px;
+  min-width: 150px;
+  width: 40%
+}
+
+.triangles div {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.redtri {
+  right:0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid #E74C3C;
+}
+
+.greytri {
+  right:50px;
+  opacity: 0.3;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 110px solid gray;
+}
+
+.navytri {
+  right: 110px;
+  margin-right: -25px;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 90px solid #0067A5;
+}
+
+.bluetri {
+  right:60px;
+  opacity: 0.7;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #3498DB;
+}
