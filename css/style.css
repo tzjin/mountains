@@ -7,10 +7,11 @@
 
 body {
   color: #444;
+  min-width: 600px;
 }
 
 .container {
-  max-width: 800px;
+  min-height: 500px;
   height: 90vh;
 }
 
@@ -135,3 +136,8 @@ a:visited {
 /**********************************************************
                   responsivity (growing pains?) 
 **********************************************************/
+
+@media (min-width:900px)
+  .container {
+    max-width: 800px;
+  }
