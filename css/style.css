@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-  min-height: 500px;
+  max-width: 800px;
+  min-height: 600px;
   height: 90vh;
 }
 
@@ -136,8 +137,3 @@ a:visited {
 /**********************************************************
                   responsivity (growing pains?) 
 **********************************************************/
-
-@media (min-width:900px)
-  .container {
-    max-width: 800px;
-  }
