@@ -1,14 +1,28 @@
 .header {
-	margin-top: 12rem;
+	margin-top: 10rem;
+}
+
+.wrapper-wrapper {
+	width:100%;
+	max-width: 480px;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; 
+	margin: 3rem 0;
 }
 
 .bb8-video {
-	margin: 3rem 0;
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 
 img {
 	margin: 1rem 0;
+	width: 100%;
 }
 
 h5 {
